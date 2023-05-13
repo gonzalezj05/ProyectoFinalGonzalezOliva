@@ -1,0 +1,124 @@
+
+$primary-color: #f0ddbd;
+
+
+@if $mode == darkmode {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: $primary-color;
+    filter: grayscale(100%);
+}
+
+/* HOME */
+.black-body {
+    background-color: black;
+}
+
+.home-title {
+    text-align: center;
+    color: grayscale($primary-color);
+    opacity: 0.5;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.home-description {
+    text-align: center;
+    color: grayscale($primary-color);
+    opacity: 0.5;
+    padding: 6px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.home-logo {
+    opacity: 0.5;
+    filter: saturate(0);
+    transition-duration: 0.3s;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.home-map {
+    width: 100%;
+    opacity: 0.7;
+    transition: ease-in 0.3s;
+}
+
+@keyframes flotar {
+    0% {
+    box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(0px);
+    }
+    50% {
+    box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0);
+    transform: translatey(-05px);
+    }
+    100% {
+    box-shadow: 0 20px 15px 5px rgba(0, 0, 0, 0);
+    transform: translatey(0px);
+    }
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.4;
+  filter: grayscale(100%) saturate(0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2%;
+  color: grayscale(#520c30);
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.3;
+  color: grayscale(#520c30);
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid grayscale(#ccc);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.
+}
+}
